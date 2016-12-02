@@ -1,0 +1,56 @@
+.main__watch
+    &-header
+        ^[0]-episode
+            ul
+                background: rgb(255, 255, 255);
+                height: 500px;
+                overflow-y: scroll;
+                padding-left 0
+            li
+                list-style none
+                height 62px
+                width 97%
+                padding 5px
+                box-sizing content-box
+                cursor pointer
+                transition all 0.3s ease-in-out
+                &:hover
+                    background #ed215e
+                    color white
+                    a
+                        color white
+                img
+                    float left
+                ^[0]-suggest-episode
+                    float left
+                    margin-left 10px 
+                    a
+                        display block
+                        color black
+                        text-decoration none
+        ^[0]-content
+            ^[0]-info
+                background white
+                padding 10px
+                color black
+                h1
+                    font-weight 400
+                span
+                    padding 5px 0
+                    display block
+                    transition all 0.3s ease-in-out
+                    cursor pointer
+                    &:hover
+                        color #ed215e
+                #follow
+                    height 48px
+                    line-height 40px
+                    font-weight 500
+                #views
+                    font-size: 25px;
+                    padding-right: 30px;
+                    border-bottom: 1px solid rgba(255, 0, 0, 0.11)
+        ^[0]-footer
+            ^[0]-comments
+                background white
+                margin-top 20px

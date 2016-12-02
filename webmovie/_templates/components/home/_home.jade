@@ -35,7 +35,7 @@ mixin ritem(stt, name, episode, img)
 .main.row
     .col-md-12
         .wrapper
-            .main__citem
+            .main__citem#newanime
                 .row.main__header
                     +header('New Anime Releases For You')
                 .row.main__citem-content
@@ -57,7 +57,7 @@ mixin ritem(stt, name, episode, img)
                     +item('Date A Live', '#532', '11')
                     +item('Attack on the Titan', '#325', '12')
             
-            .row
+            .row#trending
                 .main__ritem.col-sm-12.col-md-6
                     .row.main__header
                         .col-md-10.col-sm-7.col-xs-5
@@ -86,7 +86,7 @@ mixin ritem(stt, name, episode, img)
                             span show all 
                             i.fa.fa-chevron-down
             
-            .main__citem
+            .main__citem#popular
                 .row.main__header
                     +header('Popular Anime You May Like')
                 .row.main__citem-content
@@ -96,3 +96,47 @@ mixin ritem(stt, name, episode, img)
                     +item('Hunter x Hunter', '#23', '16')
                     +item('Digimon', '#50', '17')
                     +item('Gumball', '#56', '18')
+
+            .main__watch
+                .row.main__watch-header
+                    .col-md-8.col-sm-12.col-xs-12
+                        .main__watch-video
+                            iframe(width='100%', height='500', src='https://www.youtube.com/embed/1vhL4mi28n8', frameborder='0', allowfullscreen='')
+
+                    .col-md-4.col-sm-12.col-xs-12
+                        .main__watch-episode
+                            ul
+                                - for(var i = 1 ; i <= 20; i++)
+                                    li.hvr-bounce-to-right
+                                        img(src="http://placehold.it/62x62", alt="") 
+                                        .main__watch-suggest-episode 
+                                            a(href="") Episode #{i}
+                                            small 2,300 view
+                .row.main__watch-content
+                    .col-md-8
+                        .main__watch-info
+                            h1 Naruto Shippuuden
+                            .row
+                                .col-md-8
+                                    span#follow <i class="fa fa-plus"></i> FOLLOW
+                                .col-md-4
+                                    span.hvr-underline-from-left#views <i class="fa fa-heart"></i> 3,200 views
+                            span <i class="fa fa-list"></i> Action, Ecchi, School
+                            span <i class="fa fa-building"></i> TV Tokyo
+                            .description
+                                | Bộ anime hài hước kể về cuộc sống trong tù, cũng như những pha vượt ngục của bốn anh chàng tù nhân phòng số 13 trong nhà ngục an ninh nhất thế giới - Ngục Nanba. Bốn con người với cá tính và tài năng riêng biệt đã là một đội kết hợp hết sức ăn ý, vượt thành công vô | số nhà tù, nhưng đến nhà tù Nanba, họ lại gặp trở ngại lớn, chính là Giám sát Hajime. Liệu họ có thể thoát khỏi nhà tù này và đạt được ước mơ của mình không?
+                    
+                        .main__watch-comments
+                            .fb-comments(data-href='https://developers.facebook.com/docs/plugins/comments#configurator', data-width="100%" data-numposts='5')
+
+                    .col-md-4
+                        .main__watch-suggest
+                            .main__watch-episode
+                                ul
+                                    - for(var i = 1 ; i <= 20; i++)
+                                        li.hvr-bounce-to-right
+                                            img(src="http://placehold.it/62x62", alt="") 
+                                            .main__watch-suggest-episode 
+                                                a(href="") Episode #{i}
+                                                small 2,300 view
+
