@@ -12,7 +12,6 @@
     <link rel="stylesheet" href="components/hover/css/hover-min.css"/>
     <!-- styles-->
     <link rel="stylesheet" href="css/animate.css"/>
-    <link rel="stylesheet" href="css/watch.css"/>
     <!-- styles-->
     <link rel="stylesheet" href="css/main.css"/>
     <link rel="apple-touch-icon" sizes="57x57" href="img/fav/apple-touch-icon-57x57.png"/>
@@ -36,6 +35,24 @@
   </head>
   <body>
     <div id="webmovie" class="container-fluid">
+      <header class="row header">
+        <div class="col-md-12">
+          <div class="wrapper">
+            <div class="header__search row">
+              <div class="col-md-4 header__search--center">
+                <input type="search" placeholder="What are you looking for ?" id="search-bar" class="form-control"/>
+              </div>
+            </div>
+            <div class="header__album">
+              <h2>Dragon Ball Super</h2><small>new episode</small>
+              <div class="header__album--btn">
+                <button class="btn btn-outline-primary btn-active">play</button>
+                <button class="btn btn-outline-primary">follow</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
       <div id="navmenu" class="row topmenu">
         <div class="col-md-12">
           <div class="wrapper">
@@ -53,57 +70,335 @@
           </div>
         </div>
       </div>
-      <div id="filmPage">
-        <div class="player-wrapper">
-          <div id="player" class="player">
-            <div class="player-content"></div>
-          </div>
-          <div class="player-sidebar">
-            <div class="player-sidebar-tool">
-              <div class="player-sidebar-tool-header">
-                <div class="tool-header-episode">Danh sách tập</div>
+      <div class="main row">
+        <div class="col-md-12">
+          <div class="wrapper">
+            <div class="main__citem">
+              <div class="row main__header">
+                      <div class="col-md-9 col-sm-7 col-xs-5">
+                        <h3>New Anime Releases For You</h3>
+                      </div>
+                      <div class="col-md-3 col-sm-5 col-xs-7 main__header--right"><a href="#">show all</a><a href="#"><i class="fa fa-chevron-left"></i></a><a href="#"><i class="fa fa-chevron-right"></i></a></div>
               </div>
-              <div class="player-sidebar-tool-body episodes">
-                <div>
-                  <div id="episodeSelector" class="episode-selector">Tập 
-                    <input type="number" min="1" max="9" name="current-episode"/>
+              <div class="row main__citem-content">
+                      <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                        <div class="main__citem-item">
+                          <div class="overlay"><img src="img/play.png"/></div><img src="img/1.jpg" alt="" class="img-responsive"/>
+                          <div class="main__citem-des">
+                            <h2>One Piece</h2><span>#700</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                        <div class="main__citem-item">
+                          <div class="overlay"><img src="img/play.png"/></div><img src="img/2.jpg" alt="" class="img-responsive"/>
+                          <div class="main__citem-des">
+                            <h2>Naruto</h2><span>#530</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                        <div class="main__citem-item">
+                          <div class="overlay"><img src="img/play.png"/></div><img src="img/3.jpg" alt="" class="img-responsive"/>
+                          <div class="main__citem-des">
+                            <h2>Fairy Tail</h2><span>#30</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                        <div class="main__citem-item">
+                          <div class="overlay"><img src="img/play.png"/></div><img src="img/4.jpg" alt="" class="img-responsive"/>
+                          <div class="main__citem-des">
+                            <h2>Bleach</h2><span>#530</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                        <div class="main__citem-item">
+                          <div class="overlay"><img src="img/play.png"/></div><img src="img/5.jpg" alt="" class="img-responsive"/>
+                          <div class="main__citem-des">
+                            <h2>One Puch Man</h2><span>#35</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                        <div class="main__citem-item">
+                          <div class="overlay"><img src="img/play.png"/></div><img src="img/6.jpg" alt="" class="img-responsive"/>
+                          <div class="main__citem-des">
+                            <h2>Dragon Ball Super</h2><span>Movie</span>
+                          </div>
+                        </div>
+                      </div>
+              </div>
+            </div>
+            <div class="main__citem">
+              <div class="row main__header">
+                      <div class="col-md-9 col-sm-7 col-xs-5">
+                        <h3>You May Be Like This</h3>
+                      </div>
+                      <div class="col-md-3 col-sm-5 col-xs-7 main__header--right"><a href="#">show all</a><a href="#"><i class="fa fa-chevron-left"></i></a><a href="#"><i class="fa fa-chevron-right"></i></a></div>
+              </div>
+              <div class="row main__citem-content">
+                      <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                        <div class="main__citem-item">
+                          <div class="overlay"><img src="img/play.png"/></div><img src="img/7.jpg" alt="" class="img-responsive"/>
+                          <div class="main__citem-des">
+                            <h2>Pokemon</h2><span>#320</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                        <div class="main__citem-item">
+                          <div class="overlay"><img src="img/play.png"/></div><img src="img/8.jpg" alt="" class="img-responsive"/>
+                          <div class="main__citem-des">
+                            <h2>Black Rock Shooter</h2><span>#125</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                        <div class="main__citem-item">
+                          <div class="overlay"><img src="img/play.png"/></div><img src="img/9.jpg" alt="" class="img-responsive"/>
+                          <div class="main__citem-des">
+                            <h2>Sword Art Online</h2><span>#56</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                        <div class="main__citem-item">
+                          <div class="overlay"><img src="img/play.png"/></div><img src="img/10.jpg" alt="" class="img-responsive"/>
+                          <div class="main__citem-des">
+                            <h2>5cm/s</h2><span>#75</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                        <div class="main__citem-item">
+                          <div class="overlay"><img src="img/play.png"/></div><img src="img/11.jpg" alt="" class="img-responsive"/>
+                          <div class="main__citem-des">
+                            <h2>Date A Live</h2><span>#532</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                        <div class="main__citem-item">
+                          <div class="overlay"><img src="img/play.png"/></div><img src="img/12.jpg" alt="" class="img-responsive"/>
+                          <div class="main__citem-des">
+                            <h2>Attack on the Titan</h2><span>#325</span>
+                          </div>
+                        </div>
+                      </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="main__ritem col-sm-12 col-md-6">
+                <div class="row main__header">
+                  <div class="col-md-10 col-sm-7 col-xs-5">
+                    <h3>Top View</h3>
                   </div>
-                  <div class="episode-count hide show">Tổng số: 9 tập</div>
-                  <div id="seasonActive" class="season-active">
-                    <div class="season-dropdown"></div>
+                </div>
+                <div class="row main__ritem-content">
+                        <div class="col-md-12 col-sm-12 col-xs-12 hvr-wobble-skew">
+                          <div class="row main__ritem-item">
+                            <div class="col-md-1 col-sm-1 col-xs-1 main__ritem-numberic"><span>01</span></div>
+                            <div class="col-md-2 col-sm-2 col-xs-2 main__ritem-thumb"><img src="img/19.jpg" alt=""/></div>
+                            <div class="col-md-5 col-sm-7 col-xs-5 main__ritem-title">
+                              <h2>Stand By Me</h2><span>Movie</span>
+                            </div>
+                            <div class="col-md-4 col-sm-2 main__ritem-icon">
+                              <button class="btn btn-nooutline-primary">PLAY</button>
+                              <button class="btn btn-nooutline-primary">LIKE</button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-12 col-sm-12 col-xs-12 hvr-wobble-skew">
+                          <div class="row main__ritem-item">
+                            <div class="col-md-1 col-sm-1 col-xs-1 main__ritem-numberic"><span>02</span></div>
+                            <div class="col-md-2 col-sm-2 col-xs-2 main__ritem-thumb"><img src="img/20.jpg" alt=""/></div>
+                            <div class="col-md-5 col-sm-7 col-xs-5 main__ritem-title">
+                              <h2>Adventure Time</h2><span>#250</span>
+                            </div>
+                            <div class="col-md-4 col-sm-2 main__ritem-icon">
+                              <button class="btn btn-nooutline-primary">PLAY</button>
+                              <button class="btn btn-nooutline-primary">LIKE</button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-12 col-sm-12 col-xs-12 hvr-wobble-skew">
+                          <div class="row main__ritem-item">
+                            <div class="col-md-1 col-sm-1 col-xs-1 main__ritem-numberic"><span>03</span></div>
+                            <div class="col-md-2 col-sm-2 col-xs-2 main__ritem-thumb"><img src="img/21.jpg" alt=""/></div>
+                            <div class="col-md-5 col-sm-7 col-xs-5 main__ritem-title">
+                              <h2>Inu Yasha</h2><span>#250</span>
+                            </div>
+                            <div class="col-md-4 col-sm-2 main__ritem-icon">
+                              <button class="btn btn-nooutline-primary">PLAY</button>
+                              <button class="btn btn-nooutline-primary">LIKE</button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-12 col-sm-12 col-xs-12 hvr-wobble-skew">
+                          <div class="row main__ritem-item">
+                            <div class="col-md-1 col-sm-1 col-xs-1 main__ritem-numberic"><span>04</span></div>
+                            <div class="col-md-2 col-sm-2 col-xs-2 main__ritem-thumb"><img src="img/22.jpg" alt=""/></div>
+                            <div class="col-md-5 col-sm-7 col-xs-5 main__ritem-title">
+                              <h2>Masou Gakuen HxH</h2><span>#250</span>
+                            </div>
+                            <div class="col-md-4 col-sm-2 main__ritem-icon">
+                              <button class="btn btn-nooutline-primary">PLAY</button>
+                              <button class="btn btn-nooutline-primary">LIKE</button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-12 col-sm-12 col-xs-12 hvr-wobble-skew">
+                          <div class="row main__ritem-item">
+                            <div class="col-md-1 col-sm-1 col-xs-1 main__ritem-numberic"><span>05</span></div>
+                            <div class="col-md-2 col-sm-2 col-xs-2 main__ritem-thumb"><img src="img/23.jpg" alt=""/></div>
+                            <div class="col-md-5 col-sm-7 col-xs-5 main__ritem-title">
+                              <h2>Overlord</h2><span>#250</span>
+                            </div>
+                            <div class="col-md-4 col-sm-2 main__ritem-icon">
+                              <button class="btn btn-nooutline-primary">PLAY</button>
+                              <button class="btn btn-nooutline-primary">LIKE</button>
+                            </div>
+                          </div>
+                        </div>
+                  <div class="main__ritem-showall col-md-12 col-sm-12 col-xs-12"><span>show all </span><i class="fa fa-chevron-down"></i></div>
+                </div>
+              </div>
+              <div class="main__ritem col-sm-12 col-md-6">
+                <div class="row main__header">
+                  <div class="col-md-10 col-sm-7 col-xs-5">
+                    <h3>Top Like</h3>
                   </div>
+                </div>
+                <div class="row main__ritem-content">
+                        <div class="col-md-12 col-sm-12 col-xs-12 hvr-wobble-skew">
+                          <div class="row main__ritem-item">
+                            <div class="col-md-1 col-sm-1 col-xs-1 main__ritem-numberic"><span>01</span></div>
+                            <div class="col-md-2 col-sm-2 col-xs-2 main__ritem-thumb"><img src="img/24.jpg" alt=""/></div>
+                            <div class="col-md-5 col-sm-7 col-xs-5 main__ritem-title">
+                              <h2>God Eater</h2><span>#250</span>
+                            </div>
+                            <div class="col-md-4 col-sm-2 main__ritem-icon">
+                              <button class="btn btn-nooutline-primary">PLAY</button>
+                              <button class="btn btn-nooutline-primary">LIKE</button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-12 col-sm-12 col-xs-12 hvr-wobble-skew">
+                          <div class="row main__ritem-item">
+                            <div class="col-md-1 col-sm-1 col-xs-1 main__ritem-numberic"><span>02</span></div>
+                            <div class="col-md-2 col-sm-2 col-xs-2 main__ritem-thumb"><img src="img/25.jpg" alt=""/></div>
+                            <div class="col-md-5 col-sm-7 col-xs-5 main__ritem-title">
+                              <h2>Ajin</h2><span>#250</span>
+                            </div>
+                            <div class="col-md-4 col-sm-2 main__ritem-icon">
+                              <button class="btn btn-nooutline-primary">PLAY</button>
+                              <button class="btn btn-nooutline-primary">LIKE</button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-12 col-sm-12 col-xs-12 hvr-wobble-skew">
+                          <div class="row main__ritem-item">
+                            <div class="col-md-1 col-sm-1 col-xs-1 main__ritem-numberic"><span>03</span></div>
+                            <div class="col-md-2 col-sm-2 col-xs-2 main__ritem-thumb"><img src="img/26.jpg" alt=""/></div>
+                            <div class="col-md-5 col-sm-7 col-xs-5 main__ritem-title">
+                              <h2>Gurren Lagann</h2><span>#250</span>
+                            </div>
+                            <div class="col-md-4 col-sm-2 main__ritem-icon">
+                              <button class="btn btn-nooutline-primary">PLAY</button>
+                              <button class="btn btn-nooutline-primary">LIKE</button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-12 col-sm-12 col-xs-12 hvr-wobble-skew">
+                          <div class="row main__ritem-item">
+                            <div class="col-md-1 col-sm-1 col-xs-1 main__ritem-numberic"><span>04</span></div>
+                            <div class="col-md-2 col-sm-2 col-xs-2 main__ritem-thumb"><img src="img/27.jpg" alt=""/></div>
+                            <div class="col-md-5 col-sm-7 col-xs-5 main__ritem-title">
+                              <h2>Danmachi</h2><span>#250</span>
+                            </div>
+                            <div class="col-md-4 col-sm-2 main__ritem-icon">
+                              <button class="btn btn-nooutline-primary">PLAY</button>
+                              <button class="btn btn-nooutline-primary">LIKE</button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-12 col-sm-12 col-xs-12 hvr-wobble-skew">
+                          <div class="row main__ritem-item">
+                            <div class="col-md-1 col-sm-1 col-xs-1 main__ritem-numberic"><span>05</span></div>
+                            <div class="col-md-2 col-sm-2 col-xs-2 main__ritem-thumb"><img src="img/28.jpg" alt=""/></div>
+                            <div class="col-md-5 col-sm-7 col-xs-5 main__ritem-title">
+                              <h2>Gintama</h2><span>#250</span>
+                            </div>
+                            <div class="col-md-4 col-sm-2 main__ritem-icon">
+                              <button class="btn btn-nooutline-primary">PLAY</button>
+                              <button class="btn btn-nooutline-primary">LIKE</button>
+                            </div>
+                          </div>
+                        </div>
+                  <div class="main__ritem-showall col-md-12 col-sm-12 col-xs-12"><span>show all </span><i class="fa fa-chevron-down"></i></div>
                 </div>
               </div>
             </div>
-            <div id="episodeList" class="episode-list show">
-              <div class="episode-list-wrapper"><a href="">
-                  <div data-id="123616" class="episode-list-item active">
-                    <div class="episode-list-thumbnail"><img src="http://placehold.it/106x62"/>
-                      <div class="play-button"><i class="fa fa-play"></i></div>
-                    </div>
-                    <div class="episode-list-item-title">Tập 9 - Hành lang Sellun bùng phát</div>
-                    <div class="episode-list-item-views">2,017 lượt xem</div>
-                  </div></a></div>
+            <div class="main__citem">
+              <div class="row main__header">
+                      <div class="col-md-9 col-sm-7 col-xs-5">
+                        <h3>Popular Anime You May Like</h3>
+                      </div>
+                      <div class="col-md-3 col-sm-5 col-xs-7 main__header--right"><a href="#">show all</a><a href="#"><i class="fa fa-chevron-left"></i></a><a href="#"><i class="fa fa-chevron-right"></i></a></div>
+              </div>
+              <div class="row main__citem-content">
+                      <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                        <div class="main__citem-item">
+                          <div class="overlay"><img src="img/play.png"/></div><img src="img/13.jpg" alt="" class="img-responsive"/>
+                          <div class="main__citem-des">
+                            <h2>Bikini Warriors</h2><span>#532</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                        <div class="main__citem-item">
+                          <div class="overlay"><img src="img/play.png"/></div><img src="img/14.jpg" alt="" class="img-responsive"/>
+                          <div class="main__citem-des">
+                            <h2>Tokyo Ghoul</h2><span>#235</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                        <div class="main__citem-item">
+                          <div class="overlay"><img src="img/play.png"/></div><img src="img/15.jpg" alt="" class="img-responsive"/>
+                          <div class="main__citem-des">
+                            <h2>Fairy Tail</h2><span>#320</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                        <div class="main__citem-item">
+                          <div class="overlay"><img src="img/play.png"/></div><img src="img/16.jpg" alt="" class="img-responsive"/>
+                          <div class="main__citem-des">
+                            <h2>Hunter x Hunter</h2><span>#23</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                        <div class="main__citem-item">
+                          <div class="overlay"><img src="img/play.png"/></div><img src="img/17.jpg" alt="" class="img-responsive"/>
+                          <div class="main__citem-des">
+                            <h2>Digimon</h2><span>#50</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                        <div class="main__citem-item">
+                          <div class="overlay"><img src="img/play.png"/></div><img src="img/18.jpg" alt="" class="img-responsive"/>
+                          <div class="main__citem-des">
+                            <h2>Gumball</h2><span>#56</span>
+                          </div>
+                        </div>
+                      </div>
+              </div>
             </div>
-          </div>
-        </div>
-        <div class="film-info">
-          <h1 class="film-info-title">Shuumatsu no Izetta</h1>
-          <div id="filmAction" class="film-info-action">
-            <div class="film-info-like"><i class="fa fa-heart"></i><span> 179</span> thích</div>
-            <div class="film-info-view-count"><i class="fa fa-bolt"></i><span> 29,106</span></div>
-          </div>
-          <div class="film-info-update"><span>Tập mới nhất: 9</span></div>
-          <div class="film-info-genre"><a href="">Hành Động</a></div>
-          <div class="film-info-subteam"><a href="">Fuyu Fansub</a></div>
-          <div class="film-info-description">
-            <p>
-              Vào năm 1939 SCN, đế quốc Đức xâm lược các quốc gia láng giềng. Cuộc chiến nhanh chóng lan rộng cả Châu
-              Âu và thời đại thế chiến bắt đầu. Vào năm 1940, Đức chuyển hướng tấn công vào vương quốc Eylstadt,
-              một đất nước nhỏ bé ở vùng núi Alps bao quanh bởi những con sông và rừng cây. Câu chuyện xoay quanh
-              Izetta, thành viên duy nhất còn sống của gia tộc phù thủy, Izetta nguyện giúp đỡ công chúa Fine và
-              đất nước Eylstadt trong trận chiến với đế quốc Đức.
-            </p>
           </div>
         </div>
       </div>
