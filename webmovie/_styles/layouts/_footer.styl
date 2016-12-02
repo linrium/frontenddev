@@ -1,0 +1,44 @@
+.footer
+    height 460px
+    background url('../img/12.jpg')
+    background-size cover
+    background-attachment fixed
+    background-position center center
+    position relative
+    &:before
+        content ''
+        position absolute
+        top 0
+        left 0
+        right 0
+        bottom 0
+        background linear-gradient(to top, rgb(29, 67, 80), rgba(164, 57, 49, 0.66))
+    &__menu
+        &-col3
+            li
+                list-style none
+                a
+                    text-decoration none
+                    line-height 60px
+                    font-size 20px
+                    color white
+                    transition all 0.3s ease-in-out
+                    display block
+                    &:hover
+                        color rgba(0,0,0,.6)
+                        transform scale(1.05)
+        &-col6
+            height 420px
+            overflow hidden
+            @media screen and (max-width: 580px)
+                display none
+            img
+                height 100%
+    
+    &__coypright
+        height 30px
+        line-height 30px
+        background transparent
+        color white
+        a
+            color white

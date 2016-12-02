@@ -1,0 +1,40 @@
+.topmenu
+    background rgb(29, 67, 80)
+    transition all 0.3s ease-in-out;
+    z-index 999
+    &__nav
+        padding 0
+        // border-bottom 1px solid rgba(255, 255, 255, 0.18)
+        button
+            height 70px
+            .fa
+                color white
+        .nav-item
+            margin-left 0 !important
+        .nav-link
+            height 70px
+            color white
+            line-height @height
+            padding 0 30px
+            text-transform uppercase
+            font-weight 400
+            transition all 0.3s ease-in-out
+        .in
+            .nav-link
+                height 50px
+                line-height 50px
+                padding 0 15px
+                font-size 15px
+
+.fix-nav
+    position fixed
+    top 0
+    left 15px
+    right 0
+    box-shadow 3px 3px 10px #1f1616
+    // background rgba(26, 25, 31, 0.99)
+
+
+
+.hvr-underline-from-left:before
+    background #ed215e

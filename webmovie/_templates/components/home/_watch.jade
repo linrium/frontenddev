@@ -1,0 +1,78 @@
+//- .main.row
+//-     .col-md-12
+//-         .wrapper
+//-             .main__watch
+//-                 .row.main__watch-header
+//-                     .col-md-8
+//-                         .main__watch-video
+//-                             iframe(width='100%', height='500', src='https://www.youtube.com/embed/XejTYj596vM', frameborder='0', allowfullscreen='')
+//-                     .col-md-4
+//-                         .main__watch-episode
+//-                             ul
+//-                                 - for(var i = 1 ; i <= 20; i++)
+//-                                     li
+//-                                         a(href="") Episode #{i}
+//-                 .row.main__watch-content
+//-                     .col-md-8
+//-                         .main__watch-title
+//-                             h1 One Piece - Vua Hải Tặc
+//-                     .col-md-4
+//-                         .main__watch-episode
+//-                             ul
+//-                                 - for(var i = 1 ; i <= 20; i++)
+//-                                     li
+//-                                         a(href="") Episode #{i}
+
+//-         div(style="height: 2000px")
+
+#filmPage
+    .player-wrapper
+        #player.player
+            .player-content
+                
+        .player-sidebar
+            .player-sidebar-tool
+                .player-sidebar-tool-header
+                    .tool-header-episode Danh sách tập
+                .player-sidebar-tool-body.episodes
+                    div
+                        #episodeSelector.episode-selector
+                            | Tập 
+                            input(type='number', min='1', max='9', name='current-episode')
+                        .episode-count.hide.show Tổng số: 9 tập
+                        #seasonActive.season-active
+                            .season-dropdown
+            #episodeList.episode-list.show
+                .episode-list-wrapper
+                    a(href="")
+                        .episode-list-item.active(data-id='123616')
+                            .episode-list-thumbnail
+                                img(src='http://placehold.it/106x62')
+                                .play-button
+                                    i.fa.fa-play
+                            .episode-list-item-title Tập 9 - Hành lang Sellun bùng phát
+                            .episode-list-item-views 2,017 lượt xem
+                        
+    .film-info
+        h1.film-info-title Shuumatsu no Izetta
+        #filmAction.film-info-action
+            .film-info-like
+                i.fa.fa-heart
+                span  179
+                |  thích
+            .film-info-view-count
+                i.fa.fa-bolt
+                span  29,106
+        .film-info-update
+            span Tập mới nhất: 9
+        .film-info-genre
+            a(href="") Hành Động
+        .film-info-subteam
+            a(href="") Fuyu Fansub
+        .film-info-description
+            p
+                | Vào năm 1939 SCN, đế quốc Đức xâm lược các quốc gia láng giềng. Cuộc chiến nhanh chóng lan rộng cả Châu
+                | Âu và thời đại thế chiến bắt đầu. Vào năm 1940, Đức chuyển hướng tấn công vào vương quốc Eylstadt,
+                | một đất nước nhỏ bé ở vùng núi Alps bao quanh bởi những con sông và rừng cây. Câu chuyện xoay quanh
+                | Izetta, thành viên duy nhất còn sống của gia tộc phù thủy, Izetta nguyện giúp đỡ công chúa Fine và
+                | đất nước Eylstadt trong trận chiến với đế quốc Đức.

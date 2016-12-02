@@ -1,0 +1,98 @@
+mixin item(name, episode, img)
+    .col-lg-2.col-md-3.col-sm-4.col-xs-6
+        .main__citem-item
+            .overlay
+                img(src="img/play.png")
+            img(src="img/#{img}.jpg", alt="").img-responsive
+            .main__citem-des
+                h2 #{name}
+                span #{episode}
+
+mixin header(title)
+    .col-md-9.col-sm-7.col-xs-5
+            h3 #{title}
+        .col-md-3.col-sm-5.col-xs-7.main__header--right
+            a(href="#") show all
+            a(href="#")
+                i.fa.fa-chevron-left
+            a(href="#")
+                i.fa.fa-chevron-right
+
+mixin ritem(stt, name, episode, img)
+    .col-md-12.col-sm-12.col-xs-12.hvr-wobble-skew
+        .row.main__ritem-item
+            .col-md-1.col-sm-1.col-xs-1.main__ritem-numberic
+                span #{stt}
+            .col-md-2.col-sm-2.col-xs-2.main__ritem-thumb
+                img(src="img/#{img}.jpg", alt="")
+            .col-md-5.col-sm-7.col-xs-5.main__ritem-title
+                h2 #{name}
+                span #{episode}
+            .col-md-4.col-sm-2.main__ritem-icon
+                button.btn.btn-nooutline-primary PLAY
+                button.btn.btn-nooutline-primary LIKE
+
+.main.row
+    .col-md-12
+        .wrapper
+            .main__citem
+                .row.main__header
+                    +header('New Anime Releases For You')
+                .row.main__citem-content
+                    +item('One Piece', '#700', '1')
+                    +item('Naruto', '#530', '2')
+                    +item('Fairy Tail', '#30', '3')
+                    +item('Bleach', '#530', '4')
+                    +item('One Puch Man', '#35', '5')
+                    +item('Dragon Ball Super', 'Movie', '6')
+
+            .main__citem
+                .row.main__header
+                    +header('You May Be Like This')
+                .row.main__citem-content
+                    +item('Pokemon', '#320', '7')
+                    +item('Black Rock Shooter', '#125', '8')
+                    +item('Sword Art Online', '#56', '9')
+                    +item('5cm/s', '#75', '10')
+                    +item('Date A Live', '#532', '11')
+                    +item('Attack on the Titan', '#325', '12')
+            
+            .row
+                .main__ritem.col-sm-12.col-md-6
+                    .row.main__header
+                        .col-md-10.col-sm-7.col-xs-5
+                            h3 Top View
+                    .row.main__ritem-content
+                        +ritem('01', 'Stand By Me', 'Movie', '19')
+                        +ritem('02', 'Adventure Time', '#250', '20')
+                        +ritem('03', 'Inu Yasha', '#250', '21')
+                        +ritem('04', 'Masou Gakuen HxH', '#250', '22')
+                        +ritem('05', 'Overlord', '#250', '23')
+                        .main__ritem-showall.col-md-12.col-sm-12.col-xs-12
+                            span show all 
+                            i.fa.fa-chevron-down
+
+                .main__ritem.col-sm-12.col-md-6
+                    .row.main__header
+                        .col-md-10.col-sm-7.col-xs-5
+                            h3 Top Like
+                    .row.main__ritem-content
+                        +ritem('01', 'God Eater', '#250', '24')
+                        +ritem('02', 'Ajin', '#250', '25')
+                        +ritem('03', 'Gurren Lagann', '#250', '26')
+                        +ritem('04', 'Danmachi', '#250', '27')
+                        +ritem('05', 'Gintama', '#250', '28')
+                        .main__ritem-showall.col-md-12.col-sm-12.col-xs-12
+                            span show all 
+                            i.fa.fa-chevron-down
+            
+            .main__citem
+                .row.main__header
+                    +header('Popular Anime You May Like')
+                .row.main__citem-content
+                    +item('Bikini Warriors', '#532', '13')
+                    +item('Tokyo Ghoul', '#235', '14')
+                    +item('Fairy Tail', '#320', '15')
+                    +item('Hunter x Hunter', '#23', '16')
+                    +item('Digimon', '#50', '17')
+                    +item('Gumball', '#56', '18')
